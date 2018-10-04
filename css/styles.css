@@ -199,8 +199,18 @@ nav h1 a {
   display: block;
   margin: 0;
   max-width: 100%;
-  min-height: 248px;
+  /* min-height: 248px; */
   min-width: 100%;
+	overflow: hidden;
+}
+#restaurant-list .restaurant-text-area {
+	padding: 0 25px
+	margin-top: 10px
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-height: 170px;
+	max-height: 170px;
 }
 #restaurants-list li h1 {
   color: #f18200;
