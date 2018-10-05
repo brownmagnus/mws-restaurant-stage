@@ -203,7 +203,7 @@ nav h1 a {
   min-width: 100%;
 	overflow: hidden;
 }
-#restaurant-list .restaurant-text-area {
+#restaurants-list .restaurant-text-area {
 	padding: 0 25px
 	margin-top: 10px
 	display: flex;
@@ -226,17 +226,23 @@ nav h1 a {
   margin: 0;
   font-size: 11pt;
 }
-#restaurants-list li a {
-  background-color: orange;
+#restaurants-list li button {
+  background-color: #a85900;
   border-bottom: 3px solid #eee;
-  color: #fff;
+  color: #f0f0f0;
   display: inline-block;
-  font-size: 10pt;
+  font-size: 14px;
   margin: 15px 0 0;
   padding: 8px 30px 10px;
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+}
+.filter-selects {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
 }
 
 /* ====================== Restaurant Details ====================== */
