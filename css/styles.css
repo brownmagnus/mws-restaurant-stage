@@ -283,6 +283,9 @@ nav h1 a {
 #restaurant-img {
 	width: 100%;
 }
+#restaurant-business-info {
+	padding: 15px 20px;
+}
 #restaurant-address {
   font-size: 12pt;
   margin: 10px 0px;
