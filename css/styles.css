@@ -280,10 +280,29 @@ nav h1 a {
   text-transform: uppercase;
   line-height: 1.1;
 }
+#restaurant-insight {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	border-bottom: 1px solid #d9d9d9;
+  border-top: 1px solid #fff;
+	padding: 15px 20px;
+}
+#restaurant-img-and-cuisine{
+	width: 50%;
+}
 #restaurant-img {
 	width: 100%;
 }
-#restaurant-business-info {
+#restaurant-business-info{
+	padding: 15px 20px;
+}
+#restaurant-hours-on{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin-top: 25px;
 	padding: 15px 20px;
 }
 #restaurant-address {
@@ -325,7 +344,7 @@ nav h1 a {
 }
 #reviews-list li {
   background-color: #fff;
-    border: 2px solid #f3f3f3;
+  border: 2px solid #f3f3f3;
   display: block;
   list-style-type: none;
   margin: 0 0 40px;
