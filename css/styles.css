@@ -287,8 +287,8 @@ nav h1 a {
 	padding: 15px 20px;
 }
 #restaurant-address {
-  font-size: 12pt;
-  margin: 10px 0px;
+  font-size: 18px;
+  font-weight: 700;
 }
 #restaurant-cuisine {
   background-color: #333;
