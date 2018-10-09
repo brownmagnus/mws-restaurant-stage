@@ -156,7 +156,6 @@ nav h1 a {
   /* padding: 0 10px; */
   width: 200px;
 }
-
 /* ====================== Restaurant Listing ====================== */
 #restaurants-list {
   background-color: #f3f3f3;
@@ -304,9 +303,9 @@ nav h1 a {
 	}
 }
 @media only screen and (min-width: 1032px) {
-	/* #restaurant-img-and-cuisine {
+	#restaurant-img-and-cuisine {
 		max-width: 350px;
-	} */
+	}
 }
 #restaurant-img {
 	width: 100%;
@@ -316,9 +315,10 @@ nav h1 a {
 }
 #restaurant-hours-on{
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-	margin-top: 25px;
+	margin-top: 20px;
 	padding: 15px 20px;
 }
 #restaurant-hours {
@@ -386,4 +386,9 @@ nav h1 a {
 }
 .restaurant-review-user {
 	font-weight: 700;
+}
+.restaurant-info-label,
+.map-aria-description,
+.filter-role-label {
+	display: none;
 }
