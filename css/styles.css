@@ -204,8 +204,8 @@ nav h1 a {
 	overflow: hidden;
 }
 #restaurants-list .restaurant-text-area {
-	padding: 0 25px
-	margin-top: 10px
+	padding: 0 25px;
+	margin-top: 10px;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -304,9 +304,9 @@ nav h1 a {
 	}
 }
 @media only screen and (min-width: 1032px) {
-	#restaurant-img-and-cuisine {
+	/* #restaurant-img-and-cuisine {
 		max-width: 350px;
-	}
+	} */
 }
 #restaurant-img {
 	width: 100%;
@@ -383,4 +383,7 @@ nav h1 a {
 }
 #restaurant-hours td {
   color: #666;
+}
+.restaurant-review-user {
+	font-weight: 700;
 }
