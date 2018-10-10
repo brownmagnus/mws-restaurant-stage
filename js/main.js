@@ -182,7 +182,7 @@ createRestaurantHTML = (restaurant) => {
   const more = document.createElement('button');
   more.innerHTML = 'View Details';
   more.setAttribute('aria-label', "View details of the restaurant " + restaurant.name);
-  more.onClick = function() {
+  more.onclick = function() {
     const url = DBHelper.urlForRestaurant(restaurant);
     window.location = url;
   }
