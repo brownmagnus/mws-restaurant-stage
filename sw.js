@@ -1,12 +1,13 @@
 var cacheID = "fend-mws-restaurant-001";
 
 self.addEventListener("install", event => {
-  event.waitUnit(
+  // Perform install steps
+  event.waitUntil(
     caches.open(cacheID).then(cache => {
-      return cache
-        .addAll([
+      return cache.addAll([
           "/",
           "/index.html",
+          "restaurant.html",
           "/css/styles.css",
           "/data/restaurants.json",
           "/js/",
@@ -36,7 +37,7 @@ self.addEventListener("fetch", event => {
 
   event.respondWith(
     caches.match(cacheRequest).then(response => {
-      return {
+      return (
         response ||
         fetch(event.request)
           .then(fetchResponse => {
@@ -54,7 +55,7 @@ self.addEventListener("fetch", event => {
               statusText: "Application is not connected to the internet"
             });
           })
-      };
+      );
     })
   );
 });
