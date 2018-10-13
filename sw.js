@@ -26,7 +26,7 @@ self.addEventListener("install", event => {
 
 self.addEventListener("fetch", event => {
   let cacheRequest = event.request;
-  let fetchRequest = event.request.clone();
+
 
 
   let cacheUrlObj = new URL(event.request.url);
@@ -41,7 +41,7 @@ self.addEventListener("fetch", event => {
       if (response) {
         return response;
       }
-
+      let fetchRequest = event.request.clone();
       return fetch(fetchRequest)
           .then(response => {
             if(!response || response.status !== 200 || response.type !== 'basic') {

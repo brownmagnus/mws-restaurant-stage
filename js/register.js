@@ -1,6 +1,6 @@
 /* Set up our service worker for the project */
 if ('serviceWorker' in navigator) {
-  window.addEventListener('load', => {
+  window.addEventListener('load', function() {
     navigator.serviceWorker.register('/sw.js').then(reg => {
         console.log("Service worker registration successful: " + reg.scope);
       })
