@@ -10,7 +10,16 @@ self.addEventListener("install", event => {
           'restaurant.html',
           '/css/styles.css',
           '/data/restaurants.json',
-          '/img/*.jpg',
+          '/img/1.jpg',
+          '/img/2.jpg',
+          '/img/3.jpg',
+          '/img/4.jpg',
+          '/img/5.jpg',
+          '/img/6.jpg',
+          '/img/7.jpg',
+          '/img/8.jpg',
+          '/img/9.jpg',
+          '/img/10.jpg',
           '/js/dbhelper.js',
           '/js/main.js',
           '/js/restaurant_info.js',
@@ -26,8 +35,6 @@ self.addEventListener("install", event => {
 
 self.addEventListener("fetch", event => {
   let cacheRequest = event.request;
-
-
 
   let cacheUrlObj = new URL(event.request.url);
   if (event.request.url.indexOf("restaurant.html") > -1) {
@@ -56,18 +63,7 @@ self.addEventListener("fetch", event => {
               });
 
             return response;
-          }
-
-          // .catch(error => {
-          //   if (event.request.url.indexOf(".jpg") > -1) {
-          //     return caches.match("/img/dr-evil.gif");
-          //   }
-          //   return new Response("Application is not connected to the internet", {
-          //     status: 404,
-          //     statusText: "Application is not connected to the internet"
-          //   });
-          // })
-      );
+          });
     })
   );
 });
